@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      body{
+        background-color: powderblue;
+        font-family: sans-serif;
+      }
+
+      .container{
+        background-color: LightSkyBlue;
+        width: 600px;
+        padding: 100px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 id="res"></h1>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      var nomeUtente = prompt('Qual é il tuo nome?');
+      var cognomeUtente = prompt('Qual é il tuo cognome?');
+      var etaUtente = prompt('Qual é la tua etá?')
+      var coloreUtente = prompt('Qual é il tuo colore preferito?')
+
+      var res = nomeUtente + ' ' + cognomeUtente + ' ' + etaUtente + ' ' + coloreUtente;
+
+      document.getElementById('res').innerHTML = res;
+    </script>
+
+  </body>
+</html>
